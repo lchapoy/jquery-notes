@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome-4.6.3/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/notes.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Header  -->
+    <nav class="navbar navbar-inverse nav-padding">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Notas</a>
+        </div>
+        <button id="newNote" class="btn btn-danger navbar-btn navbar-right">+</button>
+      </div>
+    </nav>
+    <!-- Note shadow -->
+    <section id="form-container" class="hidden"/>
+    </section>
+    <!-- Note box -->
+    <form class="form-style-4 form hidden" id="add-form">
+      <label for="title">
+        <span>Titulo</span><input type="text" name="title" id="title"/>
+      </label>
+      <label for="description">
+        <span>Descripcion</span><textarea type="text" name="description" id="description"></textarea>
+      </label>
+      <button id="submit" type="button" class="btn btn-default">Guardar</button>
+      <button id="cancel" type="button" class="btn btn-danger">Cancelar</button>
+    </form>
+    <!-- Notes container -->
+    <section id="notes">
+    </section>
+
+  </body>
+
+</html>
