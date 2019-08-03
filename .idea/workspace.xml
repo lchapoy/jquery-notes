@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a005283d-2bbb-4565-b34e-92ba1f83821b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/require.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/notes.js" afterPath="$PROJECT_DIR$/js/notes.js" />
     </list>
     <ignored path="noteJquery.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -276,12 +273,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564799655895</updated>
-      <workItem from="1564799657273" duration="10216000" />
+      <workItem from="1564799657273" duration="10318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10216000" />
+    <option name="totallyTimeSpent" value="10318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
