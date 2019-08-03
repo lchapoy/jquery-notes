@@ -5,19 +5,23 @@ $(document).ready(function() {
   $('#newNote').on('click', function() {
     $('#form-container').removeClass('hidden');
     $('#add-form').removeClass('hidden');
+    $('#submit').text('Guardar');
+    $('#title').val('');
+    $('#description').val('');
   });
 
   // Close Form
   $('#cancel').on('click', function() {
     $('#form-container').addClass('hidden');
     $('#add-form').addClass('hidden');
+    selectedNoteId = null;
   });
 
   // Add or Edit Listener
   $('#submit').on('click', function() {
     const title = $('#title').val();
     const description = $('#description').val();
-    if (selectedNoteId) {
+    if (selectedNoteId !== null || selectedNoteId !== undefined) {
       $(`#${selectedNoteId} h4`).text(title);
       $(`#${selectedNoteId} p`).text(description);
       selectedNoteId = null;
@@ -26,8 +30,6 @@ $(document).ready(function() {
     }
     $('#form-container').addClass('hidden');
     $('#add-form').addClass('hidden');
-    $('#title').val('');
-    $('#description').val('');
     saveNotes();
   });
 
@@ -71,6 +73,7 @@ $(document).ready(function() {
     $('#add-form').removeClass('hidden');
     $('#title').val($(`#${selectedNoteId} h4`).text());
     $('#description').val($(`#${selectedNoteId} p`).text());
+    $('#submit').text('Editar');
   }
 
   //Save Notes to Localstorage
